@@ -1,0 +1,14 @@
+version: '2.3'
+
+services:
+
+    binary_builder:
+        container_name: "binary_builder"
+        image: binary_builder
+        build:
+            dockerfile: ./dev_env/builder/Dockerfile
+            context: ../../
+            args:
+                src_path: /src
+        volumes:
+            - ../.././:/src:rw

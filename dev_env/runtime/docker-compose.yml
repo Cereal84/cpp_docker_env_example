@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+
+    hello_test:
+        container_name: "hello_test"
+        image: hello_test
+        build:
+            dockerfile: ./dev_env/runtime/Dockerfile
+            context: ../../
+

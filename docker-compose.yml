@@ -1,0 +1,8 @@
+version: '2.3'
+
+services:
+
+    hello_world:
+        container_name: "hello_world"
+        build:
+            context: .
